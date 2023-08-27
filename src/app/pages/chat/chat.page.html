@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>CHAT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="chat-container">
+   
+    <div class="chat-messages">
+      <div class="message incoming">
+        <div class="message-content">
+          <p>Hello!</p>
+          <span class="message-time">10:30 AM</span>
+        </div>
+      </div>
+      <div class="message outgoing">
+        <div class="message-content">
+          <p>Hi there!</p>
+          <span class="message-time">10:32 AM</span>
+        </div>
+      </div>
+      <!-- More chat messages here -->
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type your message...">
+      <button class="send-button">Send</button>
+    </div>
+  </div>
+</ion-content>

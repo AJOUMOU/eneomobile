@@ -1,0 +1,29 @@
+ion-card {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-card-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--ion-color-primary);
+    margin-bottom: 10px;
+  }
+  
+  ion-button {
+    margin-top: 20px;
+  }
+  
+  .logo-image {
+    height: 40px;
+    width: auto;
+  }
+  
+  .login-card {
+    background-color: #ffffff;
+  }
+  
+  .register-card {
+    background-color: #ffffff;
+  }

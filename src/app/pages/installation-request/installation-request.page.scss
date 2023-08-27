@@ -1,0 +1,89 @@
+.upper_box {
+    height: 200px;
+    padding: 15px;
+    background-color: #FFF7F0;
+  }
+  
+  .fname_box {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background-color: #f8f4e9;
+    padding-top: 3px;
+  }
+  
+  ion-card-subtitle {
+    color: rgb(68, 68, 245);
+  }
+  
+  ion-menu>ion-content>ion-item-group>ion-item {
+    --ion-background-color: #FFFFFF;
+    border-bottom: none;
+    padding: 20px;
+  }
+  
+  ion-menu>ion-content>ion-item-group {
+    --ion-background-color: #FFFFFF;
+    border: none;
+  }
+  
+  ion-item-group>ion-item-divider {
+    --ion-background-color: #FFFFFF;
+    //   border:none;
+  }
+// main page
+
+.main {
+    background-image: url("../../../assets/img/dashboard_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+
+}
+
+//   responsive
+/* Small devices (phones) */
+@media only screen and (max-width: 599px) {
+    .main {
+        background-size: contain;
+    }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+    .main {
+        background-size: cover;
+    }
+}
+.items{
+    padding-top: 5px;
+}
+ .request_card{
+    border: green 2px solid;
+ }
+ .request_card_refused{
+    background-color: danger;
+ }
+ .button_card{
+   
+        --background: #93e9be;
+        --background-hover: #9ce0be;
+        --background-activated: #88f4be;
+        --background-focused: #88f4be;
+      
+        --color: blue;
+      
+        --border-radius: 5px;
+  
+        --border-style: solid;
+        --border-width: 1px;
+      
+
+      
+        --ripple-color: deeppink;
+      
+        --padding: 10px;
+       
+    
+ }

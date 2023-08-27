@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-icon name="person-add"></ion-icon>
+      Registration
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12" size-sm="8" offset-sm="2" size-md="6" offset-md="3">
+        <ion-card class="register-card">
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating">
+                <ion-icon name="person"></ion-icon>
+                Username
+              </ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">
+                <ion-icon name="mail"></ion-icon>
+                Email
+              </ion-label>
+              <ion-input type="email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">
+                <ion-icon name="phone-portrait"></ion-icon>
+                telephone
+              </ion-label>
+              <ion-input type="email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">
+                <ion-icon name="lock-closed"></ion-icon>
+                Password
+              </ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">
+                <ion-icon name="lock-closed"></ion-icon>
+                Confirm Password
+              </ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+            <ion-button expand="full" color="primary">
+              <ion-icon name="person-add"></ion-icon>
+              Register
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

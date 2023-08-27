@@ -1,0 +1,89 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>PROFILE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div class="ion-page" id="main-content1">
+  <ion-fab slot="end" vertical="bottom" horizontal="end">
+    <ion-fab-button id="popover-button">
+      <ion-icon name="pencil-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <!-- pop over buttons start -->
+  <!-- <ion-popover trigger="popover-button" [dismissOnSelect]="true" style="margin-bottom: 10px;">
+    <ng-template>
+      <ion-content>
+        <ion-list>
+          <ion-item [button]="true" [detail]="false" style="color: blue;">modify</ion-item>
+          <ion-item [button]="true" [detail]="false" style="color: red;">cancel</ion-item>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-popover> -->
+  <!-- pop over buttons end -->
+
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>PROFILE</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-card style="height: 130px; border-radius: 10px;margin-top: 20px;">
+      <div class="col-md-12" style="display: flex;">
+        <div class="col-7" style="padding-top: 30px;padding-left: 15px;">
+          <h3 style="color: black;">AJOUMOU</h3>
+          <h6 style="color: black;">juniorajoumou</h6>
+        </div>
+        <div class="col-5">
+          <img src="../../assets/img/profile.jpg" style="height: 150px; padding: 10px;">
+        </div>
+
+      </div>
+    </ion-card>
+    <ion-card style="height: 60px;margin-top: 80px;">
+
+      <label
+        style="font-size: medium; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000000; padding-top: 10px;padding-left: 10px;">Phone
+        nr</label>
+      <p style="color:blue;padding-bottom: 25px; padding-left: 25px;">691635139</p>
+
+    </ion-card>
+    <ion-card style="height: 60px;">
+
+      <label
+        style="font-size: medium; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000000; padding-top: 10px;padding-left: 10px;">Address</label>
+      <p style="color:blue;padding-bottom: 25px; padding-left: 25px;">kolanga</p>
+
+    </ion-card>
+    <ion-card style="height: 60px;">
+      <div style="display:flex;justify-content: space-between;">
+        <div>
+          <label
+            style="font-size: medium; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000000; padding-top: 10px;padding-left: 10px;">Password</label>
+          <p style="color:blue;padding-bottom: 25px; padding-left: 25px;">*********</p>
+        </div>
+        <div>
+          <ion-button fill="clear" id="password_pop">
+            <ion-icon name="eye-outline" size="large"></ion-icon>
+          </ion-button>
+          <ion-popover trigger="password_pop" triggerAction="click">
+            <ng-template>
+              <ion-content class="ion-padding"><label style="color: blue;">AJOUMOU12345</label></ion-content>
+            </ng-template>
+          </ion-popover>
+        </div>
+      </div>
+    </ion-card>
+
+    
+  </ion-content>
+</div>

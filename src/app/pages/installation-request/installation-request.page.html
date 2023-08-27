@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>INSTALLATION REQUEST</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<div class="ion-page" id="main-content">
+
+  <ion-content class="main">
+
+    <div class="main">
+
+      <ion-fab slot="end" vertical="bottom" horizontal="end" style="padding-top: 30px;">
+        <ion-fab-button id="open-action-sheet">
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+
+      <ion-action-sheet trigger="open-action-sheet" [buttons]="actionSheetButtons"
+        class="action-sheet-button"></ion-action-sheet>
+      <div class="ion-padding">
+        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-top: 10px;">
+          Request List</h1>
+        <ion-card class="request_card">
+          <ion-card-header>
+            <div style="display: flex; justify-content: space-between;">
+              <ion-card-title>requests</ion-card-title>
+              <ion-icon name="close" style="font-size: 40px; color: black;"></ion-icon>
+            </div>
+          </ion-card-header>
+          <ion-card-content>
+            <p>ID : 8878-9987</p>
+            <p class="items">Agent name : 8878-9987</p>
+            <p class="items">Status : <b>ACCEPTED</b></p>
+            <p class="items">Address : kolanga</p>
+            <div style="justify-content: space-between;display: flex;">
+              <ion-button fill="clear" style="float: right;">view
+                <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear" style="float: right;">chat
+                <ion-icon slot="end" name="chatbubble-ellipses-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="request_card_refused" style="border: red 2px solid;">
+          <ion-card-header>
+            <div style="display: flex; justify-content: space-between;">
+              <ion-card-title>requests</ion-card-title>
+              <ion-icon name="close" style="font-size: 40px; color: black;"></ion-icon>
+            </div>
+          </ion-card-header>
+          <ion-card-content>
+            <p>ID : 8878-9987</p>
+            <p class="items">Agent name : 8878-9987</p>
+            <p class="items">Status : <b>REFUSED</b></p>
+            <p class="items">Address : kolanga</p>
+            <div style="justify-content: space-between;display: flex;">
+              <ion-button fill="clear" style="float: right;">view
+                <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear" style="float: right;">chat
+                <ion-icon slot="end" name="chatbubble-ellipses-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+    </div>
+
+  </ion-content>
+</div>
